@@ -1,0 +1,157 @@
+.home-page {
+    background-color: unset;
+    .hero-section {
+        z-index: 1000;
+        background-color: unset;
+        .video-wrap {
+            .custom-video {
+                &::after {
+                    position: absolute;
+                    content: "";
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    background-image: linear-gradient(180deg, #ffffff00 90%, #000000 100%) !important;
+                }
+                img {
+                    height: 100vh;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .stevia-section {
+        position: relative;
+        .what-stevia {
+            position: relative;
+            z-index: 1000;
+            .col {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+            a {
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin-bottom: 50px;
+            }
+        }
+        .video-wrap {
+            div {
+                background-repeat: no-repeat;
+                background-position: top;
+                background-size: cover;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 150%;
+                display: block;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                background-image: linear-gradient(180deg, #000000f2 0%, #00000080 90%, #e3f2fe 100%) !important;
+                width: 100%;
+                height: 100%;
+                top: 0;
+            }
+        }
+    }
+    .section-bg {
+        background-image: linear-gradient(180deg, #e3f2ff 0%, #fff8ef 100%) !important;
+    }
+    .pricing-section {
+        z-index: 100;
+        position: relative;
+    }
+    .workout-section {
+        background-image: linear-gradient(360deg, #e3f2ff 0%, #fff8ef 100%) !important;
+        p {
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    .blogevent-section {
+        z-index: 1000;
+        position: relative;
+        .container {
+            z-index: 999;
+            position: inherit;
+        }
+        .video-wrap {
+            .custom-video {
+                &::after {
+                    position: absolute;
+                    content: "";
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    background-image: linear-gradient(180deg, #e3f2ff 0%, #fff8ef70 100%) !important;
+                }
+                img {
+                    height: 100vh;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        .hero-section {
+            .container {
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 992px) {
+        .hero-section {
+            .video-wrap {
+                .custom-video {
+                    .carousel-inner,
+                    .carousel-item,
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .hero-section {
+            margin-top: 50px;
+            .container {
+                h1 {
+                    font-size: 2rem;
+                }
+                .flex-column {
+                    margin-top: 0 !important;
+                    height: max-content;
+                }
+            }
+            .row {
+                align-items: flex-end;
+            }
+            .video-wrap {
+                .custom-video {
+                    .carousel-inner,
+                    .carousel-item,
+                    img {
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .logo-zero {
+            height: 70px;
+        }
+    }
+}

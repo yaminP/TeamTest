@@ -1,0 +1,125 @@
+.products-page{   
+    margin-top: 10rem;
+    padding: 0;
+   .title{
+    font-size: 40px;
+    text-align: center;
+    color: burlywood;
+    margin-bottom: 10rem;
+   }
+   .card-left{
+    background-color: inherit;
+    border: 0;
+    padding: 2rem;
+   }
+   .p-image{
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -65px;
+   }
+   .p-detail{
+    margin-top: 7rem;
+    h2{
+        // color: $color_3;
+        margin-bottom: 5rem;
+    }
+    strong{
+        color: $color_2;
+        min-width: 180px;
+        margin-right: 20px;
+    }
+    i{
+        font-size: 40px;
+        color: $color_3; 
+    }
+    .price{
+        text-align: right;
+        i{
+            color: $color_4;
+            min-width: 180px;
+            margin-right: 20px;
+        }
+    }
+   }
+   .card-right{
+    background-color: inherit;
+    border: 0;
+    padding: 2rem;
+    .p-detail{
+        margin-top: 7rem;
+        margin-left: 5rem;
+        h2{
+            // color: $color_3;
+            margin-bottom: 5rem;
+        }
+        strong{
+            color: $color_2;
+            min-width: 180px;
+            margin-right: 20px;
+        }
+        i{
+            font-size: 40px;
+            color: $color_3;
+        }
+        .price{
+            text-align: right;
+            i{
+                color: $color_4;
+                min-width: 180px;
+                margin-right: 20px;
+            }
+        }
+       }
+
+   }
+
+
+   @media (min-width: 300px) and (max-width: 1200px) {
+    
+    .title{
+        margin-bottom: 10px;
+    }
+       .card-left{
+        text-align: center;
+        .p-image{
+            height: 340px;
+            margin-bottom: 1rem;
+            margin-top: 10px;
+           }
+           .p-detail{
+            margin-top: 0;
+            h2{
+                // color: $color_3;
+                margin-bottom: 2rem;
+            }
+       }
+        .price{
+            text-align: center;
+        }
+       }
+       .card-right{
+        text-align: center;
+        .p-image{
+            height: 340px;
+            margin-top: 10px;
+           }
+        .p-detail{
+            margin-left: 0;
+            h2{
+                // color: $color_3;
+                margin-bottom: 2rem;
+                margin-top: -80px;
+            }
+            .price{
+                text-align: center;
+            }
+       }
+    }
+    .reverse{
+        display: flex;
+        flex-direction: column-reverse;
+       }
+   }
+   
+}

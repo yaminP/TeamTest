@@ -1,0 +1,23 @@
+.blogdetail {
+    .container {
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+    }
+    .title {
+        color: burlywood;
+    }
+    img {
+        width: 100%;
+        border: 0;
+        max-height: 450px;
+        margin-bottom: 2rem;
+        object-fit: contain;
+    }
+    p {
+        text-indent: 50px;
+    }
+    // .source{
+    //     text-align: end;
+
+    // }
+}

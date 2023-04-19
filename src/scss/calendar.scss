@@ -1,0 +1,50 @@
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+
+    .month {
+        grid-column: 1 / -1;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .weekdays,
+    .days {
+        display: contents;
+    }
+
+    .weekdays div,
+    .days div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    .weekdays div {
+        font-weight: bold;
+    }
+
+    @media (max-width: 480px) {
+        .calendar {
+            font-size: 0.8em;
+            gap: 5px;
+            padding: 10px;
+        }
+
+        .weekdays div,
+        .days div {
+            height: 30px;
+        }
+    }
+}
